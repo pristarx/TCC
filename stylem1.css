@@ -1,0 +1,62 @@
+
+:root {
+    --cor0: #fec9d2;
+    --cor1: #fae5d8;
+    --cor2: #db5275;
+    --cor3: #82411b;
+    --cor4: #ecbc7d;
+    --cor5: #ff718a;
+    --cor6: #859b79;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor1);
+}
+
+.header {
+    background-color: var(--cor5);
+    font-weight: bold;
+    color: aliceblue;
+
+    display: flex;
+    align-items: center;
+    padding: 8px 25px;
+    gap: 10px;
+}
+
+.mini-logo {
+    width: 65px;
+    height: auto;
+    margin-left: 8px;
+    flex-shrink: 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-left: auto;
+    padding: 0;
+}
+
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+
+    transition: color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.menu a:hover {
+    color: #360314;
+    transform: translateY(-2px);
+}
